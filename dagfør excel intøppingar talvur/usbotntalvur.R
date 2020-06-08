@@ -13,7 +13,7 @@ conread <- dbConnect(odbc::odbc(),
                  Server = rstudioapi::showPrompt(title = "Server", message = "Server navn:", default = ""),
                  Database = rstudioapi::showPrompt(title = "Database", message = "Database navn:", default = ""),
                  UID = rstudioapi::showPrompt("Database Username", "Username"), 
-                 PWD = rstudioapi::askForPassword("Database password", "Password"),
+                 PWD = rstudioapi::askForPassword("Database password"),
                  Port = 5432,
                  encoding = "windows-1252"
 )
